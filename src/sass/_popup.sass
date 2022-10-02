@@ -1,0 +1,308 @@
+// .overlay-register
+// 	display: block !important
+
+.overlay,
+.overlay-register,
+.overlay-restore
+	position: fixed
+	display: none
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 9999
+	background: rgba(255, 255, 255, 0.6)
+
+.blur-overlay
+	filter: blur(25px)
+	width: 100%
+	height: 100%
+
+.wrapper
+	transition: .5s
+
+.popup,
+.popup-register,
+.popup-restore
+ position: absolute
+ display: flex
+ justify-content: center
+ margin: 0 auto
+ left: 50%
+ top: 50%
+ transform: translate(-50%, -50%)
+ width: 790px
+ // max-height: 650px
+ // height: 100%
+ // overflow-y: auto
+ outline: none
+ background: #fff
+ border-radius: 30px
+ padding: 70px 50px
+ box-shadow: 0 21px 51px 0 rgba(62, 77, 85, 0.3)
+ animation: modalComeIn .3s ease
+ z-index: 9999
+
+@keyframes modalComeIn
+ 0%
+	 top: 40%
+  opacity: 0
+ 
+ 100%
+	 top: 50%
+  opacity: 1
+
+.popup-close
+ position: absolute
+ right: 25px
+ top: 5px
+ font-size: 40px
+ color: #484748
+ cursor: pointer
+ opacity: 0.8
+ outline: none
+ z-index: 300
+
+.overlay .popup-form
+ text-align: center
+ display: flex
+ flex-direction: column
+ align-items: center
+ // width: 220px
+
+.overlay-restore .popup-form
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+.popup-form__input
+	position: relative
+	width: 220px
+	margin: 0 auto
+	margin-bottom: 15px
+	input
+		border-radius: 20px
+  border: solid 1px #cbd7dd
+  width: 100%
+  padding: 10px 20px 10px 40px
+  font-size: 14px
+ &:before
+ 	content: ''
+ 	position: absolute
+ 	width: 14px
+ 	height: 100%
+ 	display: block
+ 	top: 50%
+ 	left: 16px
+ 	transform: translate(0, -50%)
+
+.popup-form__input-email
+	&:before
+		background: url('../img/other/shape.svg') no-repeat center
+		background-size: contain
+
+.popup-form__input-password
+	&:before
+		background: url('../img/other/pass.svg') no-repeat center
+		background-size: contain
+
+.popup-form input::-webkit-input-placeholder
+	color: #b1c2cb
+	font-size: 14px
+.popup-form input::-moz-placeholder
+	color: #b1c2cb
+	font-size: 14px
+.popup-form input:-moz-placeholder
+	color: #b1c2cb
+	font-size: 14px
+.popup-form input:-ms-input-placeholder
+	color: #b1c2cb
+	font-size: 14px
+
+.forgot-password__block
+	width: 100%
+	margin-bottom: 15px
+
+.forgot-password
+	display: block
+	padding-top: 0 !important
+	text-align: right
+
+.popup-form__logo
+	width: 125px
+	margin: 0 auto
+
+.popup-form__title
+	font-size: 24px
+	padding-top: 50px
+	padding-bottom: 25px
+	text-align: center
+
+.popup-form__block-button
+	width: 100%
+	button
+		width: 95%
+		margin-bottom: 15px
+.button-form__login
+	border: 1px solid transparent
+
+.button-form__register
+	background: transparent
+	border: 1px solid #00847a
+	color: #00847a
+
+.popup-form__block-social
+	width: 100% !important
+	padding-top: 35px !important
+
+.popup-form__line
+	position: relative
+	width: 100%
+	font-size: 10px
+	margin-top: 10px
+	&:before
+		position: absolute
+		content: ''
+		width: 90px
+		height: 1px
+		background: #dde5e9
+		top: 50%
+		left: 0
+		transform: translate(0, -50%)
+	&:after
+		position: absolute
+		content: ''
+		width: 90px
+		height: 1px
+		background: #dde5e9
+		top: 50%
+		right: 0
+		transform: translate(0, -50%)
+
+.overlay-register .popup-restore::-webkit-scrollbar,
+.overlay-register .popup-register::-webkit-scrollbar,
+.overlay-register .popup::-webkit-scrollbar,
+.popup-form::-webkit-scrollbar
+ width: 0
+
+.overlay-register .popup-restore,
+.overlay-register .popup-register,
+.overlay-register .popup,
+.popup-form
+ -ms-overflow-style: none
+
+.overlay-register .popup-restore,
+.overlay-register .popup-register,
+.overlay-register .popup,
+.popup-form
+ overflow: -moz-scrollbars-none
+
+.overlay-register .popup-restore,
+.overlay-register .popup-register,
+.overlay-register .popup,
+.popup-form
+ scrollbar-width: none
+
+.register-input__block
+	display: flex
+	justify-content: center
+	width: 450px
+	margin: 0 auto
+
+.register-input__left
+	margin-right: 10px
+	display: flex
+	flex-direction: column
+	width: 100%
+
+.register-input__right
+	margin-left: 10px
+	display: flex
+	flex-direction: column
+	width: 100%
+
+.register-input__width
+	margin-bottom: 15px
+	width: 100%
+	input,
+	select
+		padding: 10px 20px
+		width: 100%
+
+.input-active
+ box-shadow: 0 0 4px 0 #00857a !important
+ border: solid 1px #00857a !important
+
+.option-style
+	color: #b1c2cb
+	font-size: 14px
+
+// .overlay-register .popup
+// 	padding: 0 170px
+
+.overlay-register .popup-form
+	width: 100%
+	// overflow-y: auto
+	// max-height: 850px
+	text-align: center
+	margin: 0 auto
+
+.overlay-register .popup-form__block-button
+	display: flex
+	justify-content: space-between
+	width: 450px
+	margin: 0 auto
+	button
+		width: 200px
+
+.register-checkbox .pageevent-sidebar__checkbox-item
+	width: 100%
+
+.register-checkbox
+	padding-top: 20px
+	padding-bottom: 20px
+	width: 460px
+	margin: 0 auto
+
+.popup-register
+	padding: 30px 0 10px 0
+
+.overlay-restore .forgot-password__block
+	display: flex
+	justify-content: space-between
+	width: 210px
+	margin: 0 auto 30px auto
+
+.overlay-restore .popup-form__block-button
+	display: flex
+	justify-content: center
+	button
+		width: 220px
+		margin: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

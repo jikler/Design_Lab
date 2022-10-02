@@ -1,0 +1,336 @@
+// @media (max-width: 1199px)
+
+@media (max-width: 991px)
+	.table
+		&-block
+			&__descr
+		&-wrap
+			font-size: 14px
+
+@media (max-width: 767px)
+	.breadcrumbs
+		padding-top: 52px
+		&-block
+			&__nav
+				font-size: 14px
+				font-weight: 400
+				li
+					&:after
+						margin-left: 10px
+						margin-right: 10px
+
+	h2.section-title
+		font-size: 48px
+		line-height: 50px
+
+	h3.section-title
+		padding-top: 48px
+		text-align: center
+		font-size: 40px
+
+	.table
+		&-block
+			&__descr
+				font-size: 16px
+				padding-top: 22px
+				line-height: 23px
+		&-wrap
+			padding-top: 44px
+			font-size: 16px
+
+	tbody
+		td
+			padding-top: 0
+			padding-bottom: 0
+			&:first-child
+				padding-left: 0
+				border-top: 1px solid #e1e1e1
+			&:last-child
+				width: 100%
+				border-bottom: none
+				justify-content: flex-start
+		span
+			padding-left: 20px
+
+	table thead
+		display: none
+	
+	table tr
+		margin-bottom: 14px
+		display: flex
+		flex-direction: column
+		border-bottom: 1px solid #e1e1e1
+
+	table td
+		display: flex
+		align-items: center
+		border-bottom: 1px solid #e1e1e1
+		&:before
+			content: attr(data-label)
+			display: flex
+			justify-content: center
+			width: 100px
+			line-height: 55px
+			font-weight: 700
+			background: #f5f4f7
+
+	.table-price
+		width: 58%
+
+	// form start
+	.form
+		h3
+			padding-top: 50px
+		&-block
+			&__descr
+				font-size: 16px
+				padding-top: 20px
+				line-height: 24px
+				padding-bottom: 40px
+			form
+				background: #f5f4f7
+				border-radius: 0
+				padding: 43px 33px 60px 33px
+				width: 100%
+				h3
+					padding-top: 0
+					padding-bottom: 40px
+					font-size: 32px
+			&__wrap
+				align-items: center
+				flex-direction: column
+			&__input
+				flex-direction: column
+				padding-bottom: 25px
+				&-prop
+					width: 100%
+					margin-right: 0
+					position: relative
+					padding-bottom: 46px
+				&-area
+					width: 100%
+					margin-right: 0
+					position: relative
+					padding-bottom: 16px
+				&-title
+					font-size: 16px
+					padding-bottom: 12px
+				input, select
+					border-radius: 4px
+					background: #fff
+					border: 1px solid #E1E1E1
+					padding: 19px
+				&-regard
+					input
+						font-size: 16px
+				&-checkbox
+					flex-direction: row
+					align-items: center
+					justify-content: space-between
+					width: 100%
+					padding-bottom: 22px
+					span
+						padding: 0
+			&__button
+				display: flex
+				justify-content: center
+
+		#price1
+			border-radius: 4px 4px 0 0
+			text-align: center
+			font-size: 16px
+
+	.range-slider
+		position: absolute
+		bottom: 19px
+		left: 0
+		width: 100%
+		ul
+			display: flex
+			justify-content: space-between
+			padding-top: 10px
+			font-size: 12px
+
+	input.input-range
+		padding: 0
+		margin: 0
+		width: 100%
+		height: 1px
+
+	// checkbox
+	.checkbox
+		--width: 44px
+		--height: 24px
+		--offset: 2px
+		--duration: .2s
+		cursor: pointer
+		&-wrap
+			display: flex
+			align-items: center
+			line-height: 51px
+			span
+				padding-left: 10px
+
+	.checkbox:hover
+		filter: brightness(1.2)
+		transition: var(--duration)
+
+	.checkbox-div
+		position: relative
+		width: var(--width)
+		height: var(--height)
+		border-radius: var(--width)
+		background-color: $color-grey
+		transition: var(--duration)
+
+	.checkbox__input
+		display: none
+
+	.checkbox__input:checked ~ .checkbox-div
+		background-color: $active-color
+
+	.checkbox__input:checked ~ .checkbox-div:before
+		left: calc(var(--width) - var(--height) + var(--offset))
+
+	.checkbox-div:before
+		content: ''
+		position: absolute
+		top: var(--offset)
+		left: var(--offset)
+		width: calc(var(--height) - 2 * var(--offset))
+		height: calc(var(--height) - 2 * var(--offset))
+		background-color: #fff
+		border-radius: 50%
+		transition: var(--duration)
+
+	.input-number
+		position: relative
+		width: 100%
+		input
+			width: 100%
+			text-align: center
+			font-size: 16px
+		&__minus, &__plus
+			position: absolute
+			display: flex
+			align-items: center
+			justify-content: center
+			top: 0
+			color: $active-color
+			font-size: 34px
+			width: 55px
+			height: 100%
+			border: 1px solid #E1E1E1
+			border-top: none
+			border-bottom: none
+			cursor: pointer
+		&__minus
+			left: 0
+			border-left: none
+			&:hover
+				transition: .1s
+				color: #fff
+				background: $active-color
+				border-radius: 4px 0 0 4px
+				border: 1px solid #E1E1E1
+		&__plus
+			right: 0
+			border-right: none
+			&:hover
+				transition: .1s
+				color: #fff
+				background: $active-color
+				border-radius: 0 4px 4px 0
+				border: 1px solid #E1E1E1
+
+	// upload
+
+	.form-block__file
+		padding-bottom: 20px
+		label
+			border-radius: 4px
+			padding: 22px
+			font-size: 16px
+			line-height: 22px
+
+	.form-block__wrap-tel
+		padding-top: 0
+		.form-block__input
+			width: 100%
+			&:first-child
+				width: 100%
+				margin-right: 0
+
+	.form-block__select
+		padding-top: 2px
+		.form-block__input
+			width: 100%
+			&:first-child
+				margin-right: 0
+
+	.custom-select
+		span
+			width: 20px
+			height: 20px
+			top: 50%
+			right: 10px
+
+	.select-arrow-rotate
+		transform: rotate(180deg) !important
+		top: 40% !important
+
+	.select-selected
+		border-radius: 4px
+		background: #fff
+		border: 1px solid #E1E1E1
+		padding: 19px
+
+	.select-items div
+		padding: 19px
+
+	.select-items::-webkit-scrollbar
+		height: 100%
+		width: 5px
+
+	.select-items::-webkit-scrollbar-thumb
+		border-radius: 5px
+		margin: 10px
+
+	.select-items
+		top: 100%
+		left: 0
+		right: 0
+		z-index: 99
+		height: 115px
+
+	.showpass
+		top: 48%
+		right: 20px
+		width: 25px
+		height: 25px
+
+	.regard
+		&-block
+			&__item
+				border-radius: 30px
+				padding: 10px 20px
+				font-size: 16px
+				margin-left: 15px
+		&-close
+			font-size: 16px
+			margin-left: 10px
+	// form end
+
+@media (max-width: 575px)
+	.table-price
+		width: 130px
+
+
+
+
+				
+
+
+
+
+

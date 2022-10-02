@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+	<!-- fonts -->
+	<link rel="stylesheet" href="assets/fonts/gilroy/stylesheet.css">
+
+	<!-- style -->
+	<!-- <link rel="stylesheet" href="assets/slick/slick-theme.css"> -->
+	<!-- <link rel="stylesheet" href="assets/slick/slick.css"> -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
+
+	<title>New page</title>
+
+	<style>
+		#hellopreloader {
+			display: none;
+		}
+		#hellopreloader_preload {
+			display: block;
+			position: fixed;
+			z-index: 99999;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			/*background-size: 64px;*/
+		}
+	</style>
+
+</head>
+<body>
+
+	<!-- preloader -->
+	<!-- <div id="hellopreloader_preload"></div>
+	<script>var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};</script> -->
+	<!-- preloader -->
+
+	<!-- header start -->
+	<header class="header">
+		<div class="container">
+			<div class="header-block">
+				<ul class="header-block__nav">
+					<li><a href="#" class="nav-active">Таблица</a></li>
+					<li><a href="#">Форма</a></li>
+					<li><a href="#">Галерея</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- header end -->
+
+
+
+
+	
+<!-- bread crumbs start -->
+<div class="container">
+	<div class="breadcrumbs">
+		<div class="breadcrumbs-block">
+			<ul class="breadcrumbs-block__nav">
+				<li><a href="#">Главная</a></li>
+				<li class="last"><a href="#">Тестовое задание</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- bread crumbs end -->
+
+<div class="container">
+	<h2 class="section-title">Тестовое задание</h2>
+</div>
+
+<!-- table start -->
+<div class="container">
+	<div class="table">
+		<div class="table-block">
+
+			<h3 class="section-title">Таблица</h3>
+			<div class="table-block__descr">Должна быть адаптивной, без дублирования информации.</div>
+
+			<div class="table-wrap">
+			  <table>
+			    <thead>
+			      <tr>
+			        <th>Название</th>
+			        <th>Материал</th>
+			        <th>Размер</th>
+			        <th>Цена</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td data-label="Название"><span>Стеновой паркет</span></td>
+			        <td data-label="Материал"><span>Ольха</span></td>
+			        <td data-label="Размер"><span>13 × 78 × 300 мм</span></td>
+			        <td data-label="Цена"><span class="table-price">52 ₽</span><button class="button button-table">В корзину</button></td>
+			      </tr>
+			      <tr>
+			        <td data-label="Название"><span>Стеновой паркет</span></td>
+			        <td data-label="Материал"><span>Ольха</span></td>
+			        <td data-label="Размер"><span>13 × 78 × 600 мм</span></td>
+			        <td data-label="Цена"><span class="table-price">112 ₽</span><button class="button button-table">В корзину</button></td>
+			      </tr>
+			      <!-- <tr>
+			        <td data-label="Название"><span>Доска для пола, сорт А</span></td>
+			        <td data-label="Материал"><span>Лиственница</span></td>
+			        <td data-label="Размер"><span>27 × 134 × 2000 мм</span></td>
+			        <td data-label="Цена"><span class="table-price">1062 ₽</span><button class="button button-table">В корзину</button></td>
+			      </tr>
+			      <tr>
+			        <td data-label="Название"><span>Вагонка</span></td>
+			        <td data-label="Материал"><span>Термо-абаш</span></td>
+			        <td data-label="Размер"><span>19 × 90 × 2000 мм</span></td>
+			        <td data-label="Цена"><span class="table-price">1009 ₽</span><button class="button button-table">В корзину</button></td>
+			      </tr> -->
+			    </tbody>
+			</table>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- table end -->
+
+<!-- form start -->
+<div class="container">
+	<div class="form">
+		<div class="form-block">
+			
+			<h3 class="section-title">Форма</h3>
+			<div class="form-block__descr">Должна иметь проверку полей: обязательное поле, формат, минимальное значение. При несоответствии должна выводиться соответствующая ошибка. Поле «Телефон» должен содержать маску ввода.</div>
+
+			<form action="">
+
+				<h3 class="section-title">Заказать проект</h3>
+
+				<div class="form-block__input">
+					<span class="form-block__input-title">Название</span>
+					<input type="text" id="name">
+				</div>
+
+				<div class="form-block__wrap">
+
+					<div class="form-block__input form-block__input-prop">
+						<span class="form-block__input-title">Стоимость</span>
+						<input type="text" id="price1" value="10 000 000">
+
+								<div class="range-slider">
+					    <input id="price2" class="input-range" type="range" value="10000000" min="10000000" max="40000000">
+
+						    <ul>
+						    	<li>10</li>
+						    	<li>20</li>
+						    	<li>30</li>
+						    	<li>40+</li>
+						    </ul>
+
+						  </div>
+					</div>
+
+					<div class="form-block__input form-block__input-area">
+						<span class="form-block__input-title">Площадь</span>
+						<div class="input-number">
+			    <span class="input-number__minus">-</span>
+			    <input type="text" value="1" id="input-number">
+			    <span class="input-number__plus">+</span>
+						</div>
+					</div>
+
+					<div class="form-block__input form-block__input-checkbox">
+						<span class="form-block__input-title">Отделка</span>
+						<div class="checkbox-wrap">
+							<label for="checkbox" class="checkbox">
+								<input type="checkbox" id="checkbox" class="checkbox__input">
+								<div class="checkbox-div"></div>
+							</label>
+							<span>Вайтбокс</span>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="form-block__wrap form-block__wrap-tel">
+					<div class="form-block__input">
+						<span class="form-block__input-title">Телефон</span>
+						<input type="tel" name="phone" id="tel" required placeholder="+7">
+					</div>
+
+					<div class="form-block__input">
+						<span class="form-block__input-title">Почта</span>
+						<input type="email" name="email" required id="email">
+					</div>
+				</div>
+
+				<div class="form-block__input form-block__file">
+					<span class="form-block__input-title">Приложить файлы</span>
+					<label for="file-input">Кликните или перенесите файлы в эту область.<br>
+					Только JPG, до 1Мб</label>
+					<input class="file-input" id="file-input" type="file" name="file" hidden>
+				</div>
+
+				<section class="progress-area"></section>
+				<section class="uploaded-area"></section>
+
+				<div class="form-block__wrap form-block__select">
+
+					<div class="form-block__input">
+						<span class="form-block__input-title">Материал</span>
+
+						<div class="custom-select">
+							<span class="arrow"><img src="assets/img/select.png" alt="arrow"></span>
+						  <select>
+						    <option value="0">Любой</option>
+						    <option value="1">Доска</option>
+						    <option value="2">Паркет</option>
+						    <option value="3">Плитка</option>
+						    <option value="4">Сайдинг</option>
+						  </select>
+						</div>
+
+					</div>
+
+					<div class="form-block__input form-block__input-pass">
+						<span class="form-block__input-title">Пароль</span>
+						<input type="password" name="password" required id="password-input">
+						<span class="showpass"></span>
+					</div>
+
+				</div>
+
+				<div class="form-block__input form-block__input-regard">
+					<span class="form-block__input-title">Пожелания</span>
+					<input type="text" id="name" placeholder="укажите через запятую">
+				</div>
+
+				<!-- <ul class="regard-block">
+
+					<li class="regard-block__item">
+						<span>Yellov</span>
+						<span class="regard-close">✕</span>
+					</li>
+
+					<li class="regard-block__item">
+						<span>Yellov</span>
+						<span class="regard-close">✕</span>
+					</li>
+
+				</ul> -->
+
+				<div class="form-block__button">
+					<button class="button button-form">Отправить заявку</button>
+				</div>
+
+			</form>
+
+		</div>
+	</div>
+</div>
+<!-- form end -->
+
+<!-- gallery start -->
+<div class="container">
+	<div class="gallery">
+		<div class="gallery-block">
+			
+		</div>
+	</div>
+</div>
+
+<!-- <div class="container">
+  <h2>Created by: <a href="https://linktr.ee/shakhzodtojiyev" target="_blank">shakhzodtojiyev</a></h2>
+
+        <ul class="filter-menu">
+            <li data-target="all">All</li>
+            <li data-target="male">Male</li>
+            <li data-target="female">Female</li>
+            <li data-target="kid">Kid</li>
+        </ul>
+
+        <ul class="filter-item">
+            <li data-item="male"><img src="https://res.cloudinary.com/seidensticker/image/upload/ar_1:1,c_mfit,w_900,f_auto/production/product/1227/63/1227-63-image-3-5ea8c16216339.jpg" alt=""></li>
+            <li data-item="male"><img src="https://media.boohoo.com/i/boohoo/mzz70546_white_xl?$product_image_main_mobile$" alt=""></li>
+            <li data-item="female"><img src="https://i.pinimg.com/originals/8e/dc/0b/8edc0b484b3c9098181f72746653f63c.jpg" alt=""></li>
+          <li data-item="female"><img src="https://i.pinimg.com/originals/a3/dd/2c/a3dd2c9d7028a36f89291ac308497cca.jpg" alt=""></li>
+            <li data-item="kid"><img src="https://media.kasperskydaily.com/wp-content/uploads/sites/36/2020/02/11224850/smartphone-for-kids-featured.jpg" alt=""></li>
+            <li data-item="kid"><img src="https://images.ctfassets.net/cnu0m8re1exe/2elnw1rJ0HL8QqPOd3OtH5/c5b25256f2f8c7ba398ef21a2ca6504d/Kid-Thinking.jpg?w=650&h=433&fit=fill" alt=""></li>
+        </ul>
+    </div> -->
+<!-- gallery end -->
+
+
+
+
+
+
+
+
+<!-- footer start -->
+<!-- footer end -->
+
+	<!-- script start -->
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+
+	 <!-- Custom js -->
+	<script src="assets/slick/slick.min.js"></script>
+	<script src="assets/js/jquery.inputmask.bundle.js"></script>
+	<script src="assets/js/script.js"></script>
+
+</body>
+</html>
